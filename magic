@@ -1,0 +1,20 @@
+ <!doc type html> 
+ <!--magic.html                                                                                   ALVIN.TARPEH -->
+ <!--web page contains magic 8 ball -->
+ <!-- =============================================================================================== -->
+
+<html>
+<head>
+<title> Magic 8-ball</title>
+<script type="text/javascript" src="http://balance3e.com/random.js"></script>
+function RandomOneOf(['yes','no','maybe','unlikely','likely'])
+//Assumes:textbox contains yes/no questions
+//Results:returns a random response from at least five possible responses
+</script>
+</head>
+
+<body>
+    
+<h1 style="text-align:center"Magic 8-ball(Mattel,Inc)</h1>
+<p style="text-align:center">
+Enter a question below,then click on the Magic 8-ball to recieve its wisdom.

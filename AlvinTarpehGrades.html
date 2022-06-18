@@ -1,0 +1,43 @@
+ <!doctype html>
+ <!--grades.html                      GRADES-->                        
+ <!--WEB PAGE THAT CALCULATES GRADES OF STUDENTS. -->
+ <!-- ============================================== -->
+
+ <html>
+   <head>
+      <title> Student Grades </title>
+  </head>
+
+  <body>
+    <h2> Grade Average </h2>
+    <p>
+      Homework Grade: <input type="text" id="BOX_ID1" size=10 value="">
+      <br>
+      Homework Weight Percentage: 25%
+      <br>
+      Lab Grade: <input type="text" id="BOX_ID2" size=10 value="">
+      <br>
+      Lab Weight Percentage: 20%
+      <br>
+      Midterm Grade: <input type="text" id="BOX_ID3" size=10 value="">
+      <br>
+      Midterm Weight Percentage: 25%
+      <br>
+      Final Exam Grade <input type="text" id="BOX_ID4" size=10 value="">
+      <br>
+      Final Exam Weight Percentage: 30%
+    </p>
+    <input type="button" value="Calculate Average"
+      onclick="VAR1=parseFloat(document.getElementById('BOX_ID1').value);
+               VAR2=parseFloat(document.getElementById('BOX_ID2').value);
+               VAR3=parseFloat(document.getElementById('BOX_ID3').value);
+               VAR4=parseFloat(document.getElementById('BOX_ID4').value);
+               RESULT=(VAR1*0.25)+(VAR2*0.20)+(VAR3*0.25)+(VAR4*0.30);
+               document.getElementById('outputDiv').innerHTML=
+               'Your Grade is '+ RESULT;">
+
+     <hr>
+     <div id="outputDiv"></div>
+     </body>
+    </html>
+               

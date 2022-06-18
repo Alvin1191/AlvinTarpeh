@@ -1,0 +1,96 @@
+<! doctype    html>  
+
+
+<!-- SurfaceArea.html                   Alvin Tarpeh -->
+
+
+<! webpage that generates SurfaceArea. -->
+
+
+
+
+
+<html>
+
+
+<head>
+
+
+<title> Surface Area </title>
+
+
+<script type="text/javascript">
+
+
+function getSurfaceArea()
+
+
+//Assumes: caculates and returns the surface area by mutliplying height by weight then dividing the value  by 3600 and then finding the square root of the new value
+
+
+//Results : displays SurfaceArea in outputDiv
+
+
+{
+
+     height=parseFloat(document.getElementById('BOX_ID1').value);
+
+
+     weight=parseFloat(document.getElementById('BOX_ID2').value;
+
+
+     surfacearea=Math.sqrt(( (height*weight)/3600));
+
+
+     document.getElementById('outputDiv').innerHTML=
+
+
+      'The Surface Area is '+ surfacearea;
+
+
+}
+
+
+</script>
+
+
+</head>
+
+
+<body>
+
+
+<h2> Surface Area </h2>
+
+
+<p>
+
+
+Insert Height and Weight
+
+
+<input type="text" id="BOX_ID1" size=12 value="" <br>
+
+
+<input type="text" id="BOX_ID2" size=12 value=""
+
+
+</p>
+
+
+<input type="button" value="Find Surface Area"
+
+
+       onclick="getSurfaceArea();">
+
+
+<hr>
+
+
+<div id="outputDiv"></div>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,91 @@
+body {
+    background: #DAE5D6;
+  }
+  
+  footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0 10px 5px 0;
+  }
+  
+  footer a {
+    color: black;
+  }
+  
+  label {
+    cursor: pointer;
+    position: absolute;
+    top: 250px;
+    display: block;
+    left: 50%;
+    right: 50%;
+    margin-left: -70px;
+    border : 5px solid rgba(50, 130, 141, 0.5);
+    padding: 10px;
+    width: 100px;
+    text-align:center;
+    user-select: none;
+    background-color: rgba(255,255,255, 0.5);
+    -webkit-user-select: none;
+     
+    box-shadow: 0 10px 20px -5px black;
+      -webkit-transition: box-shadow 0.1s; /* Safari */
+      transition: box-shadow 0.1s;
+  
+  }
+  
+  .runLabel::before {
+     content:"RUN";
+    
+  }
+  
+  input {
+    display : none;
+  }
+  
+  .ninja {
+      width: 180px;
+      height: 248.5px;
+   /* height: 495px; */
+    margin: 2% auto;
+    position: relative;
+  
+    background: url('http://img13.deviantart.net/7fc3/i/2012/288/4/7/volt_sprite_sheet_by_kwelfury-d5hx008.png') 0 247.5px;
+  
+  }
+  
+  input:checked + .ninja {
+     animation: courir .3s steps(5) infinite;
+    
+  }
+  
+  
+  input:checked ~ .runLabel  {
+    color: white;
+     background-color: rgba(90, 160, 169,0.5);
+    box-shadow: 0 4px 20px -10px black;
+    
+   }
+  
+  input:checked ~ .runLabel::before {
+    content: "STOP";
+  }
+  
+  .runLabel:hover {
+    color: white;
+    background-color: rgba(90, 160, 169,0.5);
+    box-shadow: 0 10px 20px -5px black;
+    -webkit-transition: box-shadow 0.1s; /* Safari */
+      transition: box-shadow 0.1s;
+  }
+  
+  
+  
+  @keyframes courir {
+      0% { background-positiony-x:  0px; }
+      100% { background-position-x:  -900px; }
+  }
+  
+  
+  

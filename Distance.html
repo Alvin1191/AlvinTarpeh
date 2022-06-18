@@ -1,0 +1,33 @@
+<!doctype hmtl>              
+<!--distance.html                                                                                    ALVIN TARPEH  -->
+<!--Webpage that computes the distance between two arbitrary points.                                               -->
+<!--============================================================================================================== -->
+
+<html>
+<head>
+  <title> Distance Calculator </title>
+ </head>
+
+  <body>
+  <h2> Distance Calculator</h2>
+   <p>
+   Coordinate 1 : (<input type="text"  id="numBox1" size=10 value="">)(<input type="text"  id="numBox2" size=10 value="">)<br>
+   Coordinate 2:  (<input type="text"  id="numBox3" size=10 value="">)(<input type="text"  id="numBox4" size=10 value="">)
+   </p>
+   <input type="button" value="Calculate Distance"
+          onclick="X1=parseFloat(document.getElementById('numBox1').value);
+                   Y1=parseFloat(document.getElementById('numBox2').value);
+                   X2=parseFloat(document.getElementById('numBox3').value);
+                   Y2=parseFloat(document.getElementById('numBox4').value);
+                   X=X1-X2
+                   Y=Y1-Y2
+                   Xx=Math.pow(X, 2)
+                   Yy=Math.pow(Y, 2)
+                   XY=Xx+Yy;
+                   distance=Math.sqrt(XY);
+                   document.getElementById('outputDiv').innerHTML=
+                    'The distance between (' + X1 ',' + Y1 ') and (' + X2 ',' + Y2 ') is' + distance;">
+         <hr>
+        <div id="outputDiv"></div>
+     </body>
+   </html>

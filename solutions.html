@@ -1,0 +1,42 @@
+<button id="todo-button" onclick="changeToDone()">To do</button>
+<script>
+  function changeToDone() {
+    let button = document.getElementById('todo-button');
+    button.innerText = 'Done';
+  }
+</script>
+<div id="counter">0</div>
+<button onclick="countup()">Up</button>
+<script>
+    let count=0;
+
+    function countUp() {
+        count= count+1;
+        let counter = document.getElementById('counter')
+        counter.innerText=count;
+    }
+</script>
+
+<div id="counter">0</div>
+<button onclick="countdown()">Down</button>"
+<script>
+    let count =0;
+    
+    function countdown(){
+        count= count-1;
+        let counter = document.getElementById('counter')
+        counter.innerText=count;
+    }
+</script>
+
+<input type="text" id="todo-title"/>
+<button onclick="displayTitle()">Display Title</button>
+<script>
+function displayTitle() {
+    let textbox= document.getElementById('todo-title');
+    let title  =textbox.value;
+    let div =document.createElement('div');
+    div.innerText = title;
+    document.body.appendChild(div);
+}
+</script>
